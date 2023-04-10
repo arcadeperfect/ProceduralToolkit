@@ -63,10 +63,10 @@ namespace ProceduralToolkit
         /// <param name="path"> Vertices of the path. </param>
         /// <param name="joinType"> See http://www.angusj.com/delphi/clipper/documentation/Docs/Units/ClipperLib/Types/JoinType.htm </param>
         /// <param name="endType"> See http://www.angusj.com/delphi/clipper/documentation/Docs/Units/ClipperLib/Types/EndType.htm </param>
-        public void AddPath(List<Vector2> path, JoinType joinType = JoinType.jtMiter, EndType endType = EndType.etClosedPolygon)
-        {
-            clipperOffset.AddPath(ClipperUtility.ToIntPath(path), joinType, endType);
-        }
+        // public void AddPath(List<Vector2> path, JoinType joinType = JoinType.jtMiter, EndType endType = EndType.etClosedPolygon)
+        // {
+        //     clipperOffset.AddPath(ClipperUtility.ToIntPath(path), joinType, endType);
+        // }
 
         /// <summary>
         /// Adds a path to a ClipperOffset object in preparation for offsetting.
@@ -74,10 +74,10 @@ namespace ProceduralToolkit
         /// <param name="path"> Vertices of the path. </param>
         /// <param name="joinType"> See http://www.angusj.com/delphi/clipper/documentation/Docs/Units/ClipperLib/Types/JoinType.htm </param>
         /// <param name="endType"> See http://www.angusj.com/delphi/clipper/documentation/Docs/Units/ClipperLib/Types/EndType.htm </param>
-        public void AddPath(List<IntPoint> path, JoinType joinType = JoinType.jtMiter, EndType endType = EndType.etClosedPolygon)
-        {
-            clipperOffset.AddPath(path, joinType, endType);
-        }
+        // public void AddPath(List<IntPoint> path, JoinType joinType = JoinType.jtMiter, EndType endType = EndType.etClosedPolygon)
+        // {
+        //     clipperOffset.AddPath(path, joinType, endType);
+        // }
 
         /// <summary>
         /// Adds paths to a ClipperOffset object in preparation for offsetting.
@@ -85,10 +85,10 @@ namespace ProceduralToolkit
         /// <param name="paths"> List of paths. </param>
         /// <param name="joinType"> See http://www.angusj.com/delphi/clipper/documentation/Docs/Units/ClipperLib/Types/JoinType.htm </param>
         /// <param name="endType"> See http://www.angusj.com/delphi/clipper/documentation/Docs/Units/ClipperLib/Types/EndType.htm </param>
-        public void AddPaths(List<List<Vector2>> paths, JoinType joinType = JoinType.jtMiter, EndType endType = EndType.etClosedPolygon)
-        {
-            clipperOffset.AddPaths(ClipperUtility.ToIntPaths(paths), joinType, endType);
-        }
+        // public void AddPaths(List<List<Vector2>> paths, JoinType joinType = JoinType.jtMiter, EndType endType = EndType.etClosedPolygon)
+        // {
+        //     clipperOffset.AddPaths(ClipperUtility.ToIntPaths(paths), joinType, endType);
+        // }
 
         /// <summary>
         /// Adds paths to a ClipperOffset object in preparation for offsetting.
@@ -96,10 +96,10 @@ namespace ProceduralToolkit
         /// <param name="paths"> List of paths. </param>
         /// <param name="joinType"> See http://www.angusj.com/delphi/clipper/documentation/Docs/Units/ClipperLib/Types/JoinType.htm </param>
         /// <param name="endType"> See http://www.angusj.com/delphi/clipper/documentation/Docs/Units/ClipperLib/Types/EndType.htm </param>
-        public void AddPaths(List<List<IntPoint>> paths, JoinType joinType = JoinType.jtMiter, EndType endType = EndType.etClosedPolygon)
-        {
-            clipperOffset.AddPaths(paths, joinType, endType);
-        }
+        // public void AddPaths(List<List<IntPoint>> paths, JoinType joinType = JoinType.jtMiter, EndType endType = EndType.etClosedPolygon)
+        // {
+        //     clipperOffset.AddPaths(paths, joinType, endType);
+        // }
 
         /// <summary>
         /// Performs the offset operation.
